@@ -1,0 +1,36 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imageViewTrack"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_music_note"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_corner" />
+
+    <TextView
+        android:id="@+id/textViewTrackTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageViewTrack"
+        android:text="Track Title"
+        android:textSize="18sp"
+        android:textColor="?android:textColorPrimary"/>
+
+    <TextView
+        android:id="@+id/textViewArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTrackTitle"
+        android:layout_toRightOf="@id/imageViewTrack"
+        android:text="Artist Name"
+        android:textSize="14sp"
+        android:textColor="?android:textColorSecondary"/>
+
+</RelativeLayout>
